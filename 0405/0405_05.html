@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<style>
+  #border {
+    background-color: aquamarine;
+    background-clip: border-box;
+    width:200px; 
+    height:200px;
+    background-origin: border-box;
+  }
+
+  #padding {
+    background-color: aquamarine;
+    background-clip: padding-box;
+    width:200px; 
+    height:200px;
+    background-origin: padding-box;
+  }
+
+  #content {
+    background-color: aquamarine;
+    background-clip: content-box;
+    width:200px; 
+    height:200px;
+    background-origin: content-box;
+  }
+
+  div {
+    margin: 10px;
+    padding: 10px;
+    border: 10px dashed blue;
+    background-image: url(images/bg3.png);
+    background-repeat: no-repeat;
+  }
+
+  body {
+    background-image: url(images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-position: 10% 10%; */
+    /* background-position: 100px 100px; */
+    /* 값 두 개 : 가로, 세로 배치, 이미지 하나일 때만 가능. 
+    백분율은 수평 이동 시에만 이용할 것.*/
+  }
+
+ul {
+  list-style: none;
+}
+
+li {
+  background-repeat: no-repeat;
+  background-image: url(images/book-icon.png);
+  padding-left: 50px;
+  margin: 10px;
+  
+}
+
+</style>
+
+</head>
+<body>
+
+  <div id="container">
+    <div id="border">레드향</div>
+    <div id="padding">오렌지</div>
+    <div id="content">귤귤귤</div>
+  </div>
+  
+  <ul>
+    <li>학교 소개</li>
+    <li>학과 소개</li>
+    <li>자료실</li>
+    <li>질의응답</li>
+  </ul>
+
+</body>
+</html>

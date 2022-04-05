@@ -1,0 +1,51 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 800px;
+  margin: 0 auto;
+}
+/*id는 # 사용
+class는 . 사용
+margin auto 설정시 가운데 배치
+(왼쪽 오른쪽 여백이 같다.)*/
+
+#header {
+  width: 100%;
+  height: 80px;
+  background-color: gray;
+}
+
+#sidebar1 {
+  width: 200px;
+  height: 400px;
+  background-color: beige;
+  float: left;
+}
+
+#contents {
+  width: 500px;
+  height: 400px;
+  background-color: aquamarine;
+  float: left;
+}
+
+#sidebar2 {
+  width: 100px;
+  height: 400px;
+  background-color: rgb(255, 255, 0);
+  float: left;
+}
+
+#footer {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  color: white;
+  clear: left;
+}
+
+
