@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+
+.grad1 {
+    width: 200px;
+    height: 100px;
+    border: 1px solid #333;
+    background-color: red;
+    background: linear-gradient(to left bottom, red, yellow);
+    /* 선형적인 그라데이션. to 방향(right 시작시 left 방향,
+    시작 색상, 끝 색상) */
+}
+
+.grad2 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #333;
+  background-color: red;
+  background: linear-gradient(45deg, red, yellow);
+  /* 0도 : 아래에서 위(아래시작), 90도 : 왼쪽에서 오른쪽*/
+}
+
+.grad3 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #333;
+  background-color: red;
+  background: linear-gradient(45deg, red, white 20%, orange);
+}
+
+.grad4 {
+  width: 200px;
+  height: 100px;
+  border: 1px solid #333;
+  background-color: green;
+  background: radial-gradient(circle, green, white 20%, magenta 80%);
+  /* 시작하는 색 : 원의 중심 */
+}
+
+.grad5 {
+  width: 200px;
+  height: 100px;
+  border: 1px solid #333;
+  background-color: green;
+  background: radial-gradient(circle at 20% 20%, green, white 20%, yellow);
+}
+
+.grad6 {
+  width: 200px;
+  height: 100px;
+  border: 1px solid #333;
+  background-color: green;
+  background: radial-gradient(circle closest-corner at 20% 20%, green, white 20%, yellow);
+}
+
+.grad7 {
+  width: 200px;
+  height: 100px;
+  border: 1px solid #333;
+  background-color: red;
+  background: repeating-linear-gradient(red, yellow 20px);
+}
+
+.grad8 {
+  width: 200px;
+  height: 100px;
+  border: 1px solid #333;
+  background-color: green;
+  background: repeating-radial-gradient( green, cyan 20%);
+}
+
+.grad9 {
+  width: 200px;
+  height: 100px;
+  border: 1px solid #333;
+  background-color: red;
+  background: repeating-linear-gradient(red, red 10px, yellow 10px, green 38px);
+}
+
+.grad10 {
+  width: 200px;
+  height: 100px;
+  border: 1px solid #333;
+  background-color: green;
+  background: repeating-radial-gradient( green, green 10%, cyan 10%, blue 30%);
+}
+
+</style>
+</head>
+<body>
+  <div id="container">
+    <div class="grad1">레드향</div>
+    <div class="grad2">레드향</div>
+    <div class="grad3">레드향</div>
+    <div class="grad4">레드향</div>
+    <div class="grad5">레드향</div>
+    <div class="grad6">레드향</div>
+    <div class="grad7">레드향</div>
+    <div class="grad8">레드향</div>
+    <div class="grad9">레드향</div>
+    <div class="grad10">레드향</div>
+  </div>
+</body>
+</html>
